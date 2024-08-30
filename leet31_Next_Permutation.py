@@ -28,7 +28,6 @@ def nextPermutation(nums):
     i = n-1
     j = n-2
     while j >= 0:
-        print("Start",j)
         if nums[j]<nums[i]:
             i = n-1
             while i>j:
@@ -45,7 +44,6 @@ def nextPermutation(nums):
         i -= 1
         j -= 1
     
-    print("End",j)
     if j<0:
         reverse(nums,0,n-1)
 
